@@ -1,0 +1,68 @@
+.course-link {
+  cursor: pointer;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  .course-logo {
+    width: 100%;
+    .course-logo-item {
+      width: 100%;
+      height: 117px;
+    }
+  }
+  .course-describe {
+    padding: 10px;
+    .course-title {
+      margin-top: 7px;
+      margin-bottom: 7px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      font-size: 15px;
+      letter-spacing: -0.02rem;
+    }
+    .course-name-mentor {
+      font-size: 11px;
+      font-weight: 400;
+    }
+    .course-star {
+      margin-top: 7px;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 15px;
+      .course-point {
+        font-weight: 600;
+      }
+      .star {
+        margin: 0px 6px;
+      }
+      .course-reviews {
+        color: rgba(60, 60, 62, 0.577);
+      }
+    }
+    .course-price {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      margin-bottom: 15px;
+      .price {
+        margin-right: 8px;
+        text-decoration: line-through;
+      }
+      .reduced-price {
+        color: red;
+        font-weight: 700;
+      }
+    }
+    .btn-add-cart {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

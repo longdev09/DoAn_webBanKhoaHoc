@@ -1,0 +1,86 @@
+.wrapper {
+  margin-top: 20px;
+  padding: 30px;
+  .content {
+    max-width: 1136px;
+    margin: 0 auto;
+    .heading {
+      margin-bottom: 40px;
+    }
+    .course {
+      .list-course {
+        .item {
+          border-bottom: 1px solid #d1d7dc;
+          padding: 20px 0px;
+          display: flex;
+          justify-content: space-between;
+          .info-course {
+            display: flex;
+            .img {
+              width: 300px;
+              margin-right: 20px;
+            }
+            .c-courese {
+              .name-course {
+                margin-bottom: 8px;
+              }
+              .name-mentor {
+                margin-bottom: 8px;
+                font-size: 12px;
+              }
+
+              .course-star {
+                margin-top: 7px;
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                margin-bottom: 15px;
+                .course-point {
+                  font-weight: 600;
+                }
+                .star {
+                  margin: 0px 6px;
+                }
+                .course-reviews {
+                  color: rgba(60, 60, 62, 0.577);
+                }
+              }
+              .describe {
+                font-size: 12px;
+                span {
+                  &:nth-child(1) {
+                    margin-right: 10px;
+                  }
+                  &:nth-child(2) {
+                    margin-right: 10px;
+                  }
+                }
+              }
+            }
+          }
+
+          .price-course {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            span {
+              &:nth-child(1) {
+                margin-bottom: 10px;
+                color: red;
+                font-size: 20px;
+              }
+              &:nth-child(2) {
+                font-size: 13px;
+                text-decoration: line-through;
+              }
+            }
+          }
+
+          + .item {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

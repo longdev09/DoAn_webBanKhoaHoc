@@ -1,0 +1,33 @@
+.nav-item {
+  display: block;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-bottom: 10px;
+
+  &:hover {
+    border-radius: 12px;
+    background: rgba(22, 24, 35, 0.03);
+  }
+  &.active {
+    background-color: #daecfd;
+    transition: 0.3s;
+  }
+  &.active .nav-link {
+    color: var(--primary);
+  }
+
+  .nav-link {
+    display: flex;
+    line-height: 40px;
+    align-items: center;
+    color: #2a2e34;
+    .icon {
+      font-size: 20px;
+    }
+    .text {
+      margin-left: 12px;
+      font-size: 16px;
+    }
+  }
+}

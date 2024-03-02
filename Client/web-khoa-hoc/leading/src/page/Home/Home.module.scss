@@ -1,0 +1,103 @@
+.home-wrapper {
+  padding-bottom: 100px;
+  .home-banner {
+    margin-top: 20px;
+    .banner {
+      max-width: 1136px;
+      margin: 0 auto;
+      h1 {
+        color: #2d3941;
+        font-size: 36px;
+        font-weight: 900;
+        text-align: center;
+      }
+      .describe {
+        color: #2d3941;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+    .banner-bottom {
+      background-color: #0b2441;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      color: #fff;
+
+      .text {
+        margin: 0px 20px;
+        font-size: 16px;
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  // khoa hoc hoc duoc de xuat
+  .coures-wrapp {
+    margin-top: 20px;
+    .title {
+      display: flex;
+      justify-content: center;
+    }
+
+    .main-list-coures {
+      padding: 12px;
+      background-color: #f3f5f7;
+      .list-coures {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1170px;
+      }
+    }
+  }
+  .wrapper-nav {
+    position: relative;
+    background: rgb(26, 95, 203);
+    background: linear-gradient(
+        141.34deg,
+        var(--primary) 0%,
+        var(--primary-to) 91.11%
+      )
+      border-box;
+    padding: 43px 0px;
+    .bg {
+      background: url(https://firebasestorage.googleapis.com/v0/b/luutru-web-ban-khoa-hoc-cef36.appspot.com/o/banner%2Fbackground.svg?alt=media&token=a0b03e6b-7128-4630-8508-4b5229029330)
+        no-repeat 50%/100% !important;
+      height: 100%;
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    .nav-list {
+      max-width: 1136px;
+      margin: 0 auto;
+      .title {
+        color: #fff;
+        text-align: center;
+      }
+      .list {
+        display: flex;
+      }
+    }
+  }
+
+  .wrapp-mentor {
+    margin-top: 20px;
+    .list-mentor {
+      max-width: 1136px;
+      margin: 0 auto;
+    }
+    .title {
+      margin-bottom: 12px;
+      text-align: center;
+    }
+  }
+}

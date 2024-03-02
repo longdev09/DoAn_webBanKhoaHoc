@@ -1,0 +1,135 @@
+.wrapper {
+  .header {
+    align-items: center;
+    display: flex;
+    background: linear-gradient(
+      141.34deg,
+      var(--primary) 0%,
+      var(--primary-to) 91.11%
+    );
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+  }
+  .content-learning {
+    display: flex;
+    .video-wrapp {
+      margin-top: 59px;
+      position: fixed;
+      width: 77%;
+      bottom: 50px;
+      top: 0px;
+      overflow-y: overlay;
+      overscroll-behavior: contain;
+      .video-bg {
+        background-color: #000;
+        .video-js {
+          width: 85%;
+          margin: 0 auto;
+        }
+      }
+      .video-content {
+        padding: 40px 0px;
+        margin: 0 auto;
+        width: 85%;
+        .name-course {
+          font-size: 30px;
+        }
+      }
+    }
+    .track-wrapp {
+      border-left: 1px solid #e7e7e7;
+      bottom: 40px;
+      margin-top: 59px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 23%;
+      z-index: 2;
+      .track-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        h2 {
+          font-size: 20px;
+          padding: 15px;
+        }
+        .list-course {
+          overflow-y: overlay;
+          overscroll-behavior: contain;
+
+          .item-course {
+            border-left: 1px solid #d1d7dc;
+            border-right: 1px solid #d1d7dc;
+            border-bottom: 1px solid #d1d7dc;
+
+            .chapter {
+              display: flex;
+              background-color: #f7f9fa;
+              padding: 15px;
+              align-items: center;
+              .arrow {
+                width: 20%;
+                text-align: end;
+              }
+              .title-chapter {
+                width: 80%;
+              }
+              &:hover {
+                background-color: #edeff1;
+                cursor: pointer;
+              }
+            }
+            .content-course {
+              .list {
+                margin-left: 20px;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                .item {
+                  display: flex;
+                  padding: 15px;
+                  align-items: center;
+                  font-size: 13px;
+                  cursor: pointer;
+                  &.selected {
+                    background-color: #f0f0f0; /* Màu nền khi được chọn */
+                    /* Các thuộc tính SCSS khác cho phần tử được chọn nếu cần */
+                  }
+                  .icon {
+                    width: 10%;
+                  }
+                  .text {
+                    width: 70%;
+                  }
+                  .time {
+                    width: 20%;
+                    text-align: end;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .custom-modal {
+    top: -100px;
+  }
+
+  .footer {
+    align-items: center;
+    background-color: #f0f0f0;
+    bottom: 0;
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+  }
+}

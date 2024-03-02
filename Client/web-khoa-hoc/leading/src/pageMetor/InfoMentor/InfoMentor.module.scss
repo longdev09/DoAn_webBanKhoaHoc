@@ -1,0 +1,35 @@
+.wrapper {
+  .heading {
+    h2 {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: var(--primary);
+    }
+  }
+  .content {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    .avata {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      .icon-avata {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+        width: 200px;
+        height: 200px;
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+    .group-input {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.wrapper {
+  .heading {
+    background-color: azure;
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+  .content {
+    .group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .input-day {
+        width: 46%;
+      }
+    }
+    .price-sum,
+    .price-sale,
+    .price-origin {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .price-sale {
+      color: red;
+      span {
+        font-size: 12px;
+      }
+    }
+    .price-sum {
+    }
+    .drop {
+      margin-bottom: 70px;
+    }
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+}

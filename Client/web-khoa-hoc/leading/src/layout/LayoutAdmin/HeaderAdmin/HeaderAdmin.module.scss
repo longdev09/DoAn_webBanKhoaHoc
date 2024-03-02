@@ -1,0 +1,25 @@
+.wrapper {
+  border-radius: 5px;
+  .header {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .mentor {
+    }
+    .action {
+      display: flex;
+      align-items: center;
+      .bell {
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      .avata {
+        img {
+          width: 30px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

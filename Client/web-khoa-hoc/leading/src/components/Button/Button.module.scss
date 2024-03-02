@@ -1,0 +1,46 @@
+.btnwrap {
+  background: linear-gradient(
+      141.34deg,
+      var(--primary) 0%,
+      var(--primary-to) 91.11%
+    )
+    border-box;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--color-main);
+  border: 1px solid transparent;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #fff;
+  + .btnwrap {
+    margin-left: 12px;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+
+  &.disabledcss {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.outLine {
+  background: transparent;
+  padding: 12px 0px;
+  color: black;
+  &:hover {
+    border-color: #fff;
+  }
+}
+.w100 {
+  width: 100%;
+  justify-content: center;
+}

@@ -1,0 +1,35 @@
+.wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+  .content {
+    display: flex;
+    gap: 80px;
+    margin: 0 120px;
+    min-height: 100vh;
+    .heading {
+      margin: 40px 0px;
+      width: 24%;
+      .list-nav {
+        list-style-type: none;
+        margin: 40px 0px;
+        li {
+          padding: 15px 8px;
+          background-color: #eee;
+          border-radius: 8px;
+          display: flex;
+          span {
+            font-size: 18px;
+            &:nth-child(1) {
+              color: var(--primary);
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    .container {
+      margin: 40px 0px;
+      width: 60%;
+    }
+  }
+}

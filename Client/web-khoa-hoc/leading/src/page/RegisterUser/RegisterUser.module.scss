@@ -1,0 +1,96 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  .content {
+    margin: 0 auto;
+    z-index: 10;
+
+    .heading {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 200px;
+        height: 150px;
+      }
+    }
+    .wrapper-login {
+      background-color: #fff;
+      box-shadow: 0 0 7px var(--primary);
+      border-radius: 20px;
+      padding: 10px 40px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color-main);
+        font-size: 20px;
+      }
+      .input-group {
+      }
+      .or {
+        color: var(--primary);
+        margin-top: 20px;
+        text-align: center;
+      }
+      .verification {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        span {
+          &:nth-child(1) {
+            width: 70%;
+          }
+          &:nth-child(2) {
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+      .btn-login {
+        width: 100%;
+        margin-top: 40px;
+      }
+      .login-gg {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid var(--primary);
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .banner {
+    background-image: url("https://panel.happytime.vn/static/media/login_banner.8de70b9593d90ec97f49.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    bottom: 3px;
+  }
+  .footer {
+    position: fixed;
+    background-color: black;
+    padding: 40px;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    span {
+      color: #fff;
+    }
+  }
+}
+.validation-error {
+  margin-top: 4px;
+  color: #ff4d4fed;
+  font-size: 12px;
+}

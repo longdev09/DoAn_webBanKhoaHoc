@@ -1,0 +1,47 @@
+.wrapper {
+  .container {
+    padding: 20px;
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .text {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: var(--primary);
+      }
+      .input-day {
+        input {
+          width: 200px;
+          padding: 12px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          color: var(--color-main);
+          cursor: pointer;
+          &:focus {
+            box-shadow: 0 0 5px var(--color-main);
+          }
+        }
+      }
+    }
+    .content {
+      margin-top: 40px;
+      .list-card {
+        display: flex;
+      }
+
+      .chart-list {
+        margin-top: 30px;
+        margin-left: 10px;
+        border-radius: 12px;
+        background-color: #fff;
+        width: 60%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

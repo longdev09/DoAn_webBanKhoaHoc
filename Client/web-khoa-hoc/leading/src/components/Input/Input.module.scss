@@ -1,0 +1,30 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #777;
+    + label {
+    }
+  }
+  .input-w {
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fafafa;
+    border: none;
+    transition: all 0.3s;
+    &:focus {
+      border-color: var(--primary);
+      border-right-width: 1px;
+      box-shadow: 0 0 0 2px var(--bg-icon);
+      outline: 0;
+    }
+  }
+  + .input {
+    margin-top: 30px;
+  }
+}
